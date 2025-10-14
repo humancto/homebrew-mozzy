@@ -11,7 +11,7 @@ class Mozzy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/humancto/mozzy/releases/download/v1.6.0/mozzy_1.6.0_darwin_amd64.tar.gz"
-      sha256 "197abf55586afba3f07c62db53e75786d48bcdb8931a9a8b9fa54e46a29c1bd1"
+      sha256 "8e795e4d87bc9242cc9a6e5ba675b8ad606d3f6ebf7d1c6637e76d07d1e7e656"
 
       def install
         bin.install "mozzy"
@@ -19,7 +19,7 @@ class Mozzy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/humancto/mozzy/releases/download/v1.6.0/mozzy_1.6.0_darwin_arm64.tar.gz"
-      sha256 "443a0f8f91aada372955a565a9bbad06471b820419460893fe94f7b0973f563b"
+      sha256 "4b40c85e590c00a1a1e784cfa95c753465ff5d6264c3aee1dbed8f83f40888c1"
 
       def install
         bin.install "mozzy"
@@ -30,14 +30,14 @@ class Mozzy < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/humancto/mozzy/releases/download/v1.6.0/mozzy_1.6.0_linux_amd64.tar.gz"
-      sha256 "3b0a676164abfc147df920e7d1a1d5f8a5101d99769c91b585b1bcd67bf81c21"
+      sha256 "e5e3f39bcdd4138f146e2335e2d0ee5578662b9668c8aa7b5b455ea9894bba70"
       def install
         bin.install "mozzy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/humancto/mozzy/releases/download/v1.6.0/mozzy_1.6.0_linux_arm64.tar.gz"
-      sha256 "1833f24ab92c0a658c2bfa82013149f292531f0b88a6c275230543931dcbaaba"
+      sha256 "5759ed88af7bf82bb2128f314d23a4df66ad881b62772f6ed77045728cf4e435"
       def install
         bin.install "mozzy"
       end
