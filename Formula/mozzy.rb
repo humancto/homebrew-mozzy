@@ -5,21 +5,21 @@
 class Mozzy < Formula
   desc "Postman for your Terminal - Modern HTTP client with colors, workflows, and JWT tools"
   homepage "https://github.com/humancto/mozzy"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/humancto/mozzy/releases/download/v1.4.0/mozzy_1.4.0_darwin_amd64.tar.gz"
-      sha256 "72d43800cf10c9e227a5f1c69478345331bf4c953a5392412e19941e46392137"
+      url "https://github.com/humancto/mozzy/releases/download/v1.5.0/mozzy_1.5.0_darwin_amd64.tar.gz"
+      sha256 "22e5f03e255a78b55cc9b9b599093a456f84e7a58e3fbf7550b278671f7943cf"
 
       def install
         bin.install "mozzy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/humancto/mozzy/releases/download/v1.4.0/mozzy_1.4.0_darwin_arm64.tar.gz"
-      sha256 "098ca3448155fabb080e91c72b76c46bb98261a92cd3ec6aed95f9aa5523d154"
+      url "https://github.com/humancto/mozzy/releases/download/v1.5.0/mozzy_1.5.0_darwin_arm64.tar.gz"
+      sha256 "57ab18d1169454360183e29e4171951feeb61a092aab7f723a7b439c65a3d6be"
 
       def install
         bin.install "mozzy"
@@ -29,15 +29,15 @@ class Mozzy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humancto/mozzy/releases/download/v1.4.0/mozzy_1.4.0_linux_amd64.tar.gz"
-      sha256 "f001df0d1d73a24522a1fd49f756e65f92acfed5693cc4076d455b8dcf8c3fc2"
+      url "https://github.com/humancto/mozzy/releases/download/v1.5.0/mozzy_1.5.0_linux_amd64.tar.gz"
+      sha256 "eb9dc95ec0ac134cc5ecc47e243605c3f801f3f60c1eb806154c9e3dfaf50f6a"
       def install
         bin.install "mozzy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/humancto/mozzy/releases/download/v1.4.0/mozzy_1.4.0_linux_arm64.tar.gz"
-      sha256 "a3cac4c4aa7a2871456aafc6b1423c24e3dbfe5471a05fc68c7be5a9ae714d92"
+      url "https://github.com/humancto/mozzy/releases/download/v1.5.0/mozzy_1.5.0_linux_arm64.tar.gz"
+      sha256 "17b88d965478cbfd316d61c7d11626d35bd3542d4ab31158050d305006431413"
       def install
         bin.install "mozzy"
       end
