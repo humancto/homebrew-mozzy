@@ -5,21 +5,21 @@
 class Mozzy < Formula
   desc "Modern HTTP client for the terminal - a Postman alternative for JSON APIs"
   homepage "https://humancto.github.io/homebrew-mozzy/"
-  version "1.18.0"
+  version "1.19.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.18.0/mozzy_1.18.0_macos_amd64.tar.gz"
-      sha256 "b0d0f4f276ad63605efe7bd7c01489d062e8f3f1762d8deaf8d08ea35034ed2a"
+      url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.19.0/mozzy_1.19.0_macos_amd64.tar.gz"
+      sha256 "d5a198cdf7cce07f4ce982eae147c32c3875309fe1f9c7060b34cc62c9455aee"
 
       def install
         bin.install "mozzy"
       end
     end
     on_arm do
-      url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.18.0/mozzy_1.18.0_macos_arm64.tar.gz"
-      sha256 "52a141d7bc85d0395d8de20518300a73c1229f63ac8354af2795a8afe5335e2d"
+      url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.19.0/mozzy_1.19.0_macos_arm64.tar.gz"
+      sha256 "34f0033bacc548994f21a009ebf921f6f897a3c0b6fe0ad528b9c180989e8b8b"
 
       def install
         bin.install "mozzy"
@@ -30,8 +30,8 @@ class Mozzy < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.18.0/mozzy_1.18.0_linux_amd64.tar.gz"
-        sha256 "374a61dd15f470cb32115a6f71e3c2410b175281cbcedf3580fffd21893084ab"
+        url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.19.0/mozzy_1.19.0_linux_amd64.tar.gz"
+        sha256 "571f324c412025084b631ed3344e14947f571f4679846495bc9c6ed9c5249461"
 
         def install
           bin.install "mozzy"
@@ -40,8 +40,8 @@ class Mozzy < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.18.0/mozzy_1.18.0_linux_arm64.tar.gz"
-        sha256 "993b2d1690e54af6f959bfdacd66274d7b0f212fac5a6f5b0a5e4246b8e3b65c"
+        url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.19.0/mozzy_1.19.0_linux_arm64.tar.gz"
+        sha256 "541569efb2772b0558c0ac6dac427e6b77361811443a9d4cd5f4f591339ac025"
 
         def install
           bin.install "mozzy"
