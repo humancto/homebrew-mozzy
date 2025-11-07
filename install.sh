@@ -9,9 +9,9 @@ ARCH="$(uname -m)"
 
 if [ "$OS" = "Darwin" ]; then
     if [ "$ARCH" = "arm64" ]; then
-        PLATFORM="darwin_arm64"
+        PLATFORM="macos_arm64"
     else
-        PLATFORM="darwin_amd64"
+        PLATFORM="macos_amd64"
     fi
 elif [ "$OS" = "Linux" ]; then
     if [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm64" ]; then
