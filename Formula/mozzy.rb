@@ -5,21 +5,21 @@
 class Mozzy < Formula
   desc "Modern HTTP client for the terminal - a Postman alternative for JSON APIs"
   homepage "https://humancto.github.io/homebrew-mozzy/"
-  version "1.22.0"
+  version "1.23.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.22.0/mozzy_1.22.0_macos_amd64.tar.gz"
-      sha256 "8ce8026d81cb940ca8cd5e4a00bed73130858fb52cc2ed8e8d6e548369c81b52"
+      url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.23.0/mozzy_1.23.0_macos_amd64.tar.gz"
+      sha256 "9aa12af10118f77fa3478139d6ad22cab1cf438fa3c453bcb3cc680de534d2d1"
 
       def install
         bin.install "mozzy"
       end
     end
     on_arm do
-      url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.22.0/mozzy_1.22.0_macos_arm64.tar.gz"
-      sha256 "949027826a835e3e046bbfc558fdd1c78a71ebeb7fc9eac8773d8c343f017222"
+      url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.23.0/mozzy_1.23.0_macos_arm64.tar.gz"
+      sha256 "643527003bc9154a8756a9223d1cfbcf87c7ac156c7b7f35c89ae11f44ef284b"
 
       def install
         bin.install "mozzy"
@@ -30,8 +30,8 @@ class Mozzy < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.22.0/mozzy_1.22.0_linux_amd64.tar.gz"
-        sha256 "40ebe6162e5583e14f73967834ecaceadd4be05a487318d6a3cacaa3156fdb4e"
+        url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.23.0/mozzy_1.23.0_linux_amd64.tar.gz"
+        sha256 "68926bd46011767741d2669abc508b54f9d3798824f1dbc2e44bf55e13afbb02"
 
         def install
           bin.install "mozzy"
@@ -40,8 +40,8 @@ class Mozzy < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.22.0/mozzy_1.22.0_linux_arm64.tar.gz"
-        sha256 "410cb8ff096af8932e309ae4c902607b0d127791f1b7b2d2bf62213c0d611a4e"
+        url "https://github.com/humancto/homebrew-mozzy/releases/download/v1.23.0/mozzy_1.23.0_linux_arm64.tar.gz"
+        sha256 "6324f6644a5c36ce7e01dce8118f45375883dcebad0c07017abe905d1000f776"
 
         def install
           bin.install "mozzy"
